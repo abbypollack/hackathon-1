@@ -1,0 +1,53 @@
+* {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px black;
+}
+
+button {
+  background: #D39D4B;
+  text-shadow: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  width: 12.5rem;
+  height: 2.5rem;
+  border: unset;
+  border-radius: 20px;
+}
+
+.jeopardy-logo {
+  width: 250px;
+}
+.jeopardy-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+body {
+  width: 50%;
+  margin: auto;
+}
+
+* {
+  background-color: #091274;
+  color: #C8C8C8;
+}
+
+.jeopardy-button {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.jeopardy-button-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.jeopardy-subheading, .jeopardy-heading {
+  color: #D39D4B;
+}
+.jeopardy-credits {
+  text-align: center;
+}/*# sourceMappingURL=instructions.css.map */

@@ -1,0 +1,30 @@
+@use './partials/global' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+body{
+    width: 50%;
+    margin: auto;
+}
+*{
+    background-color: $blue;
+    color: $silver;
+}
+.jeopardy{
+    &-button{
+        margin-bottom: 10px;
+        padding: 0 10px;
+        &-link{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+    }
+    &-subheading,
+    &-heading{
+        color: $yellow;
+    }
+    &-credits{
+        text-align: center;
+    }
+}

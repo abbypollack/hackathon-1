@@ -1,0 +1,73 @@
+@use './partials/global' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+.popup {
+    height: 100vw;
+    width: 100vw;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 0;
+
+    &--hidden {
+        display: none;
+    }
+
+    &__container {
+        background-color: white;
+        box-shadow: 5px 10px;
+        border-radius: 30px;
+        display: flex;
+        z-index: 1;
+        width: 80vw;
+        margin: auto;
+        position: absolute;
+        align-items: center;
+        top: 15vh;
+        // display: none;
+        left: 15vh;
+        height: 70vh;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__button {
+        margin-bottom: 20px;
+        min-width: fit-content;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__question {
+        color: black;
+        text-shadow: none;
+        font-size: 40px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            flex-direction: column;
+        }
+    }
+    &__exit{
+        background-color: white;
+        margin-left: 80%;
+        width: 10px;
+    }
+    &__exit2{
+        a {
+            text-decoration: none;
+            color: black;
+            text-shadow: none;
+        }
+        background-color: white;
+        margin-left: 80%;
+        width: 10px;
+    }
+}

@@ -1,0 +1,93 @@
+* {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px black;
+}
+
+button {
+  background: #D39D4B;
+  text-shadow: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  width: 12.5rem;
+  height: 2.5rem;
+  border: unset;
+  border-radius: 20px;
+}
+
+.jeopardy-logo {
+  width: 250px;
+}
+.jeopardy-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.popup {
+  height: 100vw;
+  width: 100vw;
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  top: 0;
+}
+.popup--hidden {
+  display: none;
+}
+.popup__container {
+  background-color: white;
+  box-shadow: 5px 10px;
+  border-radius: 30px;
+  display: flex;
+  z-index: 1;
+  width: 80vw;
+  margin: auto;
+  position: absolute;
+  align-items: center;
+  top: 15vh;
+  left: 15vh;
+  height: 70vh;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.popup__button {
+  margin-bottom: 20px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.popup__header {
+  text-align: center;
+}
+.popup__question {
+  color: black;
+  text-shadow: none;
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.popup__question-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+.popup__exit {
+  background-color: white;
+  margin-left: 80%;
+  width: 10px;
+}
+.popup__exit2 {
+  background-color: white;
+  margin-left: 80%;
+  width: 10px;
+}
+.popup__exit2 a {
+  text-decoration: none;
+  color: black;
+  text-shadow: none;
+}/*# sourceMappingURL=question.css.map */

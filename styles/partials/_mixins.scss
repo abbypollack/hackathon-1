@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+@mixin button{
+    background: $yellow;
+    text-shadow: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    width: 12.5rem;
+    height: 2.5rem;
+    border: unset;
+    border-radius: 20px;
+}

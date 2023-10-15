@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Trivia Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/trivia.css">
+    <link rel="stylesheet" href="/styles/question.css">
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/scripts/api.js" defer></script>
+    <script src="/scripts/trivia.js" defer></script>
+    <script src="/scripts/btn.js" defer></script>
+</head>
+
+<body>
+    <div class="jeopardy-logo-container">
+        <img class="jeopardy-logo" src="/assets/Jeopardy_logo.png" alt="Jeopardy Logo">
+    </div>
+    <div class="board">
+        <div class="player player-1">
+            <h2 class="player__label player1-name">Player 1</h2>
+            <h2 class="player0">0</h2>
+        </div>
+        <div class="cards">
+            <!-- Easy Cards -->
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+            <div class="card card-easy">
+                <div class="card__text">Easy</div>
+            </div>
+
+            <!-- Medium Cards -->
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+            <div class="card card-medium">
+                <div class="card__text">Medium</div>
+            </div>
+
+            <!-- Hard Cards -->
+            <div class="card card-hard">
+                <div class="card__text">Hard</div>
+            </div>
+            <div class="card card-hard">
+                <div class="card__text">Hard</div>
+            </div>
+            <div class="card card-hard">
+                <div class="card__text">Hard</div>
+            </div>
+            <div class="card card-hard">
+                <div class="card__text">Hard</div>
+            </div>
+            <div class="card card-hard">
+                <div class="card__text">Hard</div>
+            </div>
+        </div>
+        <div class="player player-2">
+            <h2 class="player__label player2-name">Player 2</h2>
+            <h2 class="player1">0</h2>
+        </div>
+    </div>
+
+    <div class="popup popup--hidden">
+        <div class="popup__container">
+            <button class="popup__exit">X</button>
+            <h2 class="popup__header">Category</h2>
+            <div class="popup__question-container">
+                <div class="popup__question">Question</div>
+                <button class="popup__button">buttons</button>
+                <button class="popup__button">buttons</button>
+                <button class="popup__button">buttons</button>
+                <button class="popup__button">buttons</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup winner-popup popup--hidden">
+        <div class="popup__container">
+            <button class="popup__exit2"><a href="../instructions.html">X</a></button>
+            <h2>Congratulations! 🎉 You won!</h2>
+        </div>
+    </div>
+</body>
+
+</html>
